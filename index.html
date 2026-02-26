@@ -9,9 +9,13 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com" rel="stylesheet">
+
 </head>
 
-<body class="min-h-screen">
+<body class="min-h-screen font-[Poppins] text-[18px]">
 
   <!-- Master wrapper -->
   <div class=" max-w-[1728px] mx-auto min-h-screen">
@@ -20,35 +24,45 @@
     <div class="grid grid-cols-12 gap-[20px] px-[100px]">
 
       <!-- Header -->
-      <header class="col-span-12 flex justify-between items-center py-10 px-12 text-[18px]">
+      <header class="col-span-12 flex justify-between items-center py-10 px-12 font-medium">
         <img class="" src="./assets/LOGO 1.svg" />
 
         <div class="flex gap-12 items-center">
           <nav>
-            <ul class="flex gap-12 ">
+            <ul class="flex gap-10 ">
               <li><a href="#">Home</a></li>
               <li><a href="#">Special Offers</a></li>
-              <li ><a class="bg-[#FC8A06] px-8 py-2 rounded-full text-white"  href="#">Restaurants</a></li>
+              <li><a class="bg-[#FC8A06] px-8 py-2 rounded-full text-white" href="#">Restaurants</a></li>
               <li><a href="#">Track Order</a></li>
             </ul>
           </nav>
-        
+
           <button class=" w-[234px] h-[61px] rounded-full bg-black text-white">Login/Signup</button>
         </div>
       </header>
 
       <!-- Hero section-->
-      <section class="bg-[#03081F] col-span-12 rounded-md overflow-hidden">
-        <div class="text-white">
-          <span>I'm lovin' it</span>
-          <h2>McDonald's East London</h2>
-          <div>
-            <div class="border rounded-full"><img /><span>Minimum Order: 12 GBP</span></div>
-            <div class="border rounded-full"><img /><span>Delivery in 20-25 Minutes</span></div>
+      <section class="bg-[#03081F] col-span-12 rounded-xl relative flex h-[477px] justify-between p-14">
+
+        <div class="text-white flex flex-col justify-end mb-8">
+          <span class="text-[20px]">I'm lovin' it</span>
+          <h2 class="text-[54px] font-semibold mb-6">McDonald's East London</h2>
+          <div class="flex gap-4">
+            <div class="h-[63px] border rounded-full px-7 flex items-center justify-center gap-4"><img
+                src="./assets/Order Completed.svg" /><span class="font-semibold ">Minimum Order: 12 GBP</span></div>
+            <div class="h-[63px] border rounded-full px-7 flex items-center justify-center gap-4"><img
+                src="./assets/Motocross.svg" /><span class="font-semibold">Delivery in 20-25 Minutes</span></div>
           </div>
         </div>
-        <img />
-
+        <div class="relative w-[581px] h-full">
+          <img class="w-full h-auto" src="./assets/Rectangle 44.svg" />
+          <img class="absolute z-50 -left-10 bottom-0 w-[136px]" src="./assets/Rectangle 64.svg" />
+        </div>
+        <div
+          class="bg-[#FC8A06] w-[335px] absolute z-50 -bottom-7 left-0 h-[61px] flex items-center justify-center gap-4 text-white font-semibold rounded-tr-xl rounded-br-xl">
+          <img src="./assets/Clock.svg" />
+          <span>Open until 3:00 AM</span>
+        </div>
       </section>
 
       <main>
