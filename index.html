@@ -11,17 +11,19 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
 </head>
 
-<body class="min-h-screen font-[Poppins] text-[18px]">
+<body class="min-h-screen font-[Poppins] text-[18px] overflow-x-hidden">
 
   <!-- Master wrapper -->
-  <div class=" max-w-[1728px] mx-auto min-h-screen">
+  <div class=" max-w-[1728px] mx-auto px-[100px]">
 
     <!-- Content grid -->
-    <div class="grid grid-cols-12 gap-[20px] px-[100px]">
+    <div class="grid grid-cols-12 gap-[20px] ">
 
       <!-- Header -->
       <header class="col-span-12 flex justify-between items-center py-10 px-12 font-medium">
@@ -65,11 +67,39 @@
         </div>
       </section>
 
-      <main>
-      </main>
+      <!-- Filter section -->
+      <section class="col-span-12 mt-10">
+        <div class="flex justify-between items-center px-14">
+          <h3 class="text-[32px] font-bold">All Offers from McDonald’s East London</h3>
+          <div class="flex border rounded-full h-[63px] w-[344px] items-center justify-center gap-4">
+            <img class="w-[26px]" src="./assets/Search More.svg" />
+            <input placeholder="Search from menu..." class="font-semibold">
+          </div>
+        </div>
+      </section>
 
     </div>
   </div>
+
+  <nav class="w-full bg-[#FC8A06] mt-10 py-6">
+    <div class="max-w-[1728px] mx-auto px-[100px] text-white font-[21px] flex justify-between font-bold">
+      <button class="bg-black px-6 rounded-full py-1">Offers</button>
+      <button>Burgers</button>
+      <button>Fries</button>
+      <button>Snacks</button>
+      <button>Salads</button>
+      <button>Cold drinks</button>
+      <button>Happy Meal®</button>
+      <button>Desserts</button>
+      <button>Hot drinks</button>
+      <button>Sauces</button>
+      <button>Orbit®</button>
+    </div>
+  </nav>
+
+  <main class="max-w-[1728px] mx-auto px-[100px] mt-12">
+  </main>
+
 </body>
 
 </html>
