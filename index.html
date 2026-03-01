@@ -32,14 +32,15 @@
         <div class="flex gap-12 items-center">
           <nav>
             <ul class="flex gap-10 ">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Special Offers</a></li>
+              <li class="transition duration-100 hover:scale-112"><a href="#">Home</a></li>
+              <li class="transition duration-100 hover:scale-112"><a href="#">Special Offers</a></li>
               <li><a class="bg-[#FC8A06] px-8 py-2 rounded-full text-white" href="#">Restaurants</a></li>
-              <li><a href="#">Track Order</a></li>
+              <li class="transition duration-100 hover:scale-112"><a href="#">Track Order</a></li>
             </ul>
           </nav>
 
-          <button class="transition duration-100 hover:scale-105 cursor-pointer w-[234px] h-[61px] rounded-full bg-black text-white">Login/Signup</button>
+          <button
+            class="transition duration-100 hover:scale-105 cursor-pointer w-[234px] h-[61px] rounded-full bg-black text-white">Login/Signup</button>
         </div>
       </header>
 
@@ -100,7 +101,7 @@
   <main class="max-w-[1728px] mx-auto px-[100px] mt-20">
 
     <!-- Discounts sections -->
-    <div class="grid grid-cols-12 gap-[20px]">
+    <section class="grid grid-cols-12 gap-[20px]">
 
       <div class="col-span-4 relative h-[325px] rounded-xl overflow-hidden shadow-lg">
         <img src="./assets/Rectangle 8.png" class="absolute inset-0 w-full h-full object-cover" alt="Special Offer" />
@@ -144,7 +145,7 @@
         </div>
       </div>
 
-    </div>
+    </section>
 
     <!-- Products section -->
     <section class="mt-18">
@@ -256,7 +257,6 @@
         </div>
 
       </div>
-
 
     </section>
 
